@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Portfolio</title>
+    <link rel="stylesheet" href="../service_page/services.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>A</span>mit</a>
+        <ul class="navlist">
+            <li><a href="../index.html" style="color: #BD0690;">Home</a></li>
+            <li><a href="../service_section/services.html">Services</a></li>
+            <li><a href="../contact_section/contact.html">Contact</a></li>
+        </ul>
+        <!-- Button -->
+        <div class="right-header">
+            <a href="#contact" class="btn">Let's chat <i class='bx bx-message-dots'></i></a>
+            <div class="menu-icon">
+                <!-- This is toggle button for small devices to open list items -->
+                <div class="bar"></div>
+            </div>
+        </div>
+        <!-- Button -->
+    </header>
+    <div class="main">
+        <div class="container">
+            <!-- Portfolio Box -->
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Development</h3>
+                    <p>Building dynamic and interactive websites using HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</p>
+                    <a href="#" class="readMore" id="exploreBtn">Explore More</a>
+                </div>
+                <div class="project">
+                    <img src="../blog/img/web-development-trendsjpeg.jpeg" alt="Web Development Project" class="">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal (Hidden by default) -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Web Development Project</h2>
+                <p>This project focuses on creating an interactive and responsive website that adapts to various screen sizes. We used the latest technologies like React.js for building a fast and scalable user interface, and Vue.js for integrating dynamic components.</p>
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3 (Flexbox, Grid)</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Vue.js</li>
+                    <li>Node.js for backend</li>
+                    <li>API Integration</li>
+                </ul>
+                <h3>Features:</h3>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Interactive User Interface</li>
+                    <li>SEO Optimized</li>
+                    <li>Performance Optimized</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://github.com/akbhardvaj47" target="_blank" class="github-link">Visit my github</a>
+            <p>Copyright &copy; 2025 by <span>Ak Coder</span> | All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a> |
+                <a href="#terms-of-service">Terms of Service</a> |
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Modal functionality
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("exploreBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Me</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><span>A</span>mit</a>
+        <ul class="navlist">
+            <li><a href="../index.html" style="color: #BD0690;">Home</a></li>
+            <li><a href="../service_section/services.html">Services</a></li>
+            <li><a href="../contact_section/contact.html">Contact</a></li>
+        </ul>
+        <!-- Button -->
+        <div class="right-header">
+            <a href="#contact" class="btn">Let's chat <i class='bx bx-message-dots'></i></a>
+            <div class="menu-icon">
+                <!-- This is toggle button for small devices to open list items -->
+                <div class="bar"></div>
+            </div>
+        </div>
+        <!-- Button -->
+    </header>
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Contact Me</h2>
+                    <span>Let's Connect & Build Something Great</span>
+                </div>
+                <form action="send-email.php" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="first_name" placeholder="First Name" required>
+                        <input type="text" name="last_name" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <div class="formBtn">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <a href="https://github.com/akbhardvaj47" target="_blank" class="github-link">Visit my github</a>
+            <p>Copyright &copy; 2025 by <span>Ak Coder</span> | All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a> |
+                <a href="#terms-of-service">Terms of Service</a> |
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
